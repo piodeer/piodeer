@@ -1,0 +1,5 @@
+<script>
+  fetch('redirect.txt')
+    .then(r => r.text())
+    .then(url => window.location.href = url.trim());
+</script>
